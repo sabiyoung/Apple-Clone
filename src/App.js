@@ -27,6 +27,7 @@ function App() {
     <Router>
       <div>
         <Navigation />
+        
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/mac" exact component={Mac} />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./YouTube.css"
 // https://www.googleapis.com/youtube/v3/search?key=AIzaSyB4xNW_TeLDTO9tKxmHQAZskoy9Na0sxR0&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=1
 
 class Youtube extends Component {
@@ -9,10 +9,10 @@ class Youtube extends Component {
       youTubeVideos: [],
     };
   }
-
+  //AIzaSyDUt6nAVK-UhLoqOpH8cLg7hPnf1SMWAkI
   componentDidMount() {
     fetch(
-      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyBv_MveWxmNKF-fAAEDIy3qAIWtt0-YM1M&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
+      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDUt6nAVK-UhLoqOpH8cLg7hPnf1SMWAkI&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet,id&order=date&maxResults=6"
     )
       .then((response) => response.json())
       .then((data) => {

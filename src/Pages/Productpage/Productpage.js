@@ -10,7 +10,7 @@ class Productpage extends Component {
   }
 
   componentDidMount() {
-    fetch("/iphones.json")
+    fetch("http://localhost:3078/iphones")
       .then((res) => res.json())
       .then((products) => {
         const productList = products.products;

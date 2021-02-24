@@ -5,7 +5,7 @@ function Iphone() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/iphones.json")
+    fetch("http://localhost:3078/iphones")
       .then((res) => res.json())
       .then((products) => {
         setProducts(() => products.products);

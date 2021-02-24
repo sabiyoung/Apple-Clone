@@ -6,8 +6,10 @@ import series5 from "../../images/icons/watch-series5-logo.png";
 import arcade from "../../images/icons/arcade.png";
 
 import Fourth from "./Fourth/Fourth";
-import Rating from "./Rating/Rating";
+
 import Youtube from "../Youtube/Youtube";
+import ApiHooks from "../ApiHooks/ApiHooks"
+
 
 function Main() {
   return (
@@ -250,7 +252,10 @@ function Main() {
       </section>
 
       <section className="youtubeVideosWrapper top-100">
-        {/* <Youtube /> */}
+        <Youtube />
+        <ApiHooks />
+     
+  
       </section>
     </div>
   );
